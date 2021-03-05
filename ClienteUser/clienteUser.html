@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+  <title>Cliente Billetes</title>
+  <meta charset="utf-8">   
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+  integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  
+</head>
+
+<body>
+  <main>
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-6 align-items-end">
+            <h1 class="justify-content-center">Compra de billetes</h1>
+          </div>
+        </div>
+    </div>
+    
+
+
+    <section class="left">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-6 align-items-end">
+            <div>
+            <h2>Vuelos</h2>
+            <div id="capaQuery"></div>
+            </div>
+            <div id="contenedor">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="formulario">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-6 align-items-end">
+            <form onsubmit="" id="bForm">
+              <h3>Búscar vuelos</h3>
+              <label>Fecha: </label><input type="date" id="fechaInput" name="fecha"/><br/>
+              <label>Origen: </label><input type="text" id="origenInput" name="origen"/><br/>
+              <label>Destino: </label><input type="text" id="destinoInput" name="destino"/><br/>
+              <br/>
+              <button onclick="">Buscar Vuelos</button><br/>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-6 align-items-end">
+            <form onsubmit="" id="ccmForm">
+              <h3>Formulario de compra, cancelación o modificación</h3>
+              <label>Codigo Vuelo: </label><input type="text" id="codigoVueloInput" name="codigo"/><br/>
+              <label>DNI Viajero: </label><input type="text" id="dniVInput" name="dni"/><br/>
+              <label>DNI Nuevo: </label><input type="text" id="dniNInput" name="dniNuevo"/><br/>
+              <label>DNI Pagador: </label><input type="text" id="dniPInput" name="dniPagador" /><br/>
+              <label>Tarjeta: </label><input type="text" id="tarjetaInput" name="tarjeta"/><br/>
+              <label>Nombre: </label><input type="text" id="nombreInput" name="nombre"/><br/>
+              <label>Apellidos: </label><input type="text" id="apellidosInput" name="apellido"/><br/>
+              <label>Código Venta: </label><input type="text" id="codigoVentaInput" name="codigoVenta"/><br/>
+              <label>CVV: </label><input type="text" id="codigoVentaInput" name="cvv"/><br/>
+              <br/>
+              <button onclick="">comprar billete</button><br/>
+              <button onclick="">cancelar billete</button><br/>
+              <button onclick="">modificar billete</button><br/>        
+            </form> 
+          </div>
+        </div>
+      </div>     
+      <br />
+    </section>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header" id="modal-header">
+        <span class="close">&times;</span>
+        <h2 id="h2modal">Modal Header</h2>
+      </div>
+      <div class="modal-body" id="modal-body">
+
+      </div>
+    </div>
+
+  </div>
+
+  </main>
+  <script src="js/modal.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+  crossorigin="anonymous"></script>
+</body>
+
+</html>

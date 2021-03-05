@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <title>Vuelos</title>
+
+
+</head>
+
+<body onload="loadXMLDoc()">
+  
+  <div class= "container">
+    <div class= "row justify-content-center">
+      <div class="col-6 align-items-end"> 
+        <h2>Ver vuelos</h2>
+
+        <button type="button" onclick="loadXMLDoc()">Change Content</button>
+
+        <div class="card" id="vuelos">
+        
+        </div>
+      </div>
+    </div>
+ </div>
+
+  
+
+  </br>
+
+  <hr style="border:2px;">
+
+  </br>
+  <div class= "container">
+    <div class= "row justify-content-center">
+      <div class="col-6 align-items-end"> 
+        <h2>Insertar Vuelo</h2>
+        <label>Codigo:</label>
+        <input type="text" id="codigo"><br>
+        <label>Origen:</label>
+        <input type="text" id="origen"><br>
+        <label>Destino:</label>
+        <input type="text" id="destino"><br>
+        <label>Fecha:</label>
+        <input type="text" id="fecha"><br>
+        <label>Hora:</label>
+        <input type="text" id="hora"><br>
+        <label>Plazas Totales:</label>
+        <input type="text" id="totales"><br>
+        <label>Plazas Disponobles:</label>
+        <input type="text" id="disponibles"><br>
+        <button class="btn btn-warning" type="button" onclick="insert()">Insertar</button>
+      </div>
+    </div>
+  </div>
+
+  </br>
+
+  <hr style="border:2px;">
+
+  </br>
+ <div class= "container">
+    <div class= "row justify-content-center">
+      <div class="col-6 align-items-end"> 
+        <h2>Editar Vuelo</h2>
+        <label>Id:</label>
+        <input type="text" id="id"><br>
+        <label>Codigo:</label>
+        <input type="text" id="Ecodigo"><br>
+        <label>Origen:</label>
+        <input type="text" id="Eorigen"><br>
+        <label>Destino:</label>
+        <input type="text" id="Edestino"><br>
+        <label>Fecha:</label>
+        <input type="text" id="Efecha"><br>
+        <label>Hora:</label>
+        <input type="text" id="Ehora"><br>
+        <label>Plazas Totales:</label>
+        <input type="text" id="Etotales"><br>
+        <label>Plazas Disponobles:</label>
+        <input type="text" id="Edisponibles"><br>
+        <button class="btn btn-warning" type="button" onclick="update()">Actualizar</button>
+      </div>
+    </div>
+ </div>
+
+  </br>
+
+  <hr style="border:2px;">
+
+  </br>
+ 
+  <div class= "container">
+    <div class= "row justify-content-center">
+      <div class="col-6 align-items-end"> 
+        <h2>Buscar</h2>
+        <label>Id:</label>
+        <input type="text" id="Bid"><br>
+        <button class="btn btn-warning" type="button" onclick="search()">Buscar</button>
+        <div class="card" id="buscado">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="vuelos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
