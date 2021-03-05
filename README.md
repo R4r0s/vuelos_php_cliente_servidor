@@ -1,10 +1,13 @@
 # vuelos_php_cliente_servidor
 
-####Configurar bbd:
+#### Configurar bbd:
 Para configurar la base de datos modificar el archivo conexion.php.
 
-####Configurar js:
+#### Configurar js:
 Para que todo funcione de manera correcta actualizar los enlaces al final de cada metodo de Vuelos.js.
+
+#### Configurar login:
+Para configuar el login modificar los enlaces que se encuentran en login.php.
 
 #### leeVuelo.php
 **GET**
